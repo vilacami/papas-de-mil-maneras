@@ -2,28 +2,70 @@
 <html lang="es">  
 <head> 
     <meta charset="UFT-8">
-    <meta name="viewport" contene="width=device-width, initial-scale=1.0'>"
-    <title>papas de mil maneras </title>
+    <meta name="viewport" contene="width=device-width, initial-scale=1.0'>">
+    <title>papas de mil maneras | Inicio </title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Papas de mil maneras</h1>
-        <p>Recetas para disfrutar las papas de distintas formas.</p>
+
+        <nav>
+            <div class="marca">
+                <img src="imagenes/papalibro.webp" alt="Papita leyendo un libro de recetas">
+                <h1>Mil formas de hacer papas</h1>
+            </div>
+
+          <ul class="menuNavegacion">
+
+            <li><a class="activo" href="index.html">Inicio</a></li>
+            <li><a href="receta.html">Recetas</a></li>
+            <li><a href="formulario.html">Contacto</a></li>
+          </ul>
+
+        </nav>
+
     </header>
-
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="recetas.html">Recetas</a>
-        <a href="contacto.html">Contacto</a>
-    </nav>
-
     <main>
+
         <h2>Bienvenidos a nuestro recetario</h2>
         <p>Acá vamos a compartir recetas fáciles con papas.</p>
+  
+        <section class="presentacion-inicio">
+            <div class="Contenido">
+                <h2>¿Cuál es la forma más saludable de comer papas?</h2>
+                <p>Las papas fritas, salteadas y hasta las procesadas, están en el top de las favoritas. Pero si quieres aprovechar todos sus beneficios, entonces debes hervirlas, prepararlas al vapor o al horno. Estas son las formas más saludables de consumirlas.</p>
+            </div>
+            <img src="imagenes/papa-pure.webp" alt="Papita sonriente con un plato de puré">
+        </section>
+        
+        <section class="Carrusel">
+            <h2>Especialidades Destacadas</h2>
+            
+            <div class="DivImg">
+               
+                 <button type="button" class="flecha" onclick="anterior()">&#10094;</button>
+                  <img id="imgCarrusel" src="" alt="imagen">
+                  <button type="button" class="flecha" onclick="siguiente()">&#10095;</button>
+            </div>
+
+            <div class="txtImagen">
+                <p id="txt"></p>
+            </div>
+
+        </section>
+        <section class="Consejos">
+
+            <h4>Consejos finales </h4>
+            <p>Como dato adicional, y para sacar el mayor provecho de sus propiedades naturales, se recomienda cocinarlas con la piel y cuando estén listas enfriarlas con agua. Este procedimiento ayuda a reducir el nivel de almidón de la papa. 
+               Para evitar que se deshagan al hervirlas, agrega un chorrito de vinagre al agua. Si se van hacer enteras, lo mejor es pincharlas un poco para que no se abran y bajar la llama cuando rompa el hervor. </p>
+        </section>
+
     </main>
 
     <footer>
-        <p>Trabajo Final Integrador de Web 1</p>
+        <h3>Comision1_2026 Mil Formas de Hacer Papa - Trabajo Final Integrador</h3>
+         
     </footer>
+    <script src="script.js"></script>
 </head>
 </html>
