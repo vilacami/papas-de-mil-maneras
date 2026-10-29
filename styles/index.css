@@ -59,8 +59,6 @@ nav h1{
     background-color: #d9ead3;
 }
 
-
-
 main{
 
     background-color:#FFF5E6;
@@ -146,14 +144,9 @@ main{
     cursor: pointer;
     top: 180px;
     }
-
-
 .flecha:hover {
     background-color: #d2bd9f;
 }
-
-
-
 .Consejos {
     font-size: 110%;
     max-width: 800px;
@@ -173,4 +166,95 @@ footer{
 }
 footer p{
     margin: 5px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:30px;
+    align-items: center;
+    padding:20px; 
+}
+#secciones{
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+
+}
+input{
+    margin:10px 0;
+    border-radius: 0;
+    width: 100%;             
+    max-width: 350px;        
+    padding: 10px 15px;
+
+}
+#mensaje{
+    display: block;
+    padding: 10px 15px;
+    font: inherit; 
+    border-radius: 0;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.error {
+    color: #8a1f11;
+    font-size: 19px;
+    background-color: peru;
+}
+
+#resumen {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+}
+
+.pagina-recetas main {
+    padding: 24px;
+}
+
+.pagina-recetas main h2 {
+    max-width: 1000px;
+    margin: 0 auto 16px;
+}
+
+.recetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.recetas article {
+    flex: 1 1 420px;
+    padding: 18px;
+    background-color: #fff8ef;
+}
+
+.recetas img {
+    width: 100%;
+    height: auto;
+}
+.recetas .mascota-receta {
+    display: block;
+    width: 110px;
+    margin: 10px auto;
+}
+
+.recetas ul,
+.recetas ol {
+    margin: 8px 0 16px 22px;
+}
+
+@media (max-width: 600px) {
+    nav,
+    .menuNavegacion {
+        justify-content: center;
+    }
+
+    nav h1 {
+        text-align: center;
+    }
 }
