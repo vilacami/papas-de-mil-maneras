@@ -137,13 +137,11 @@ main{
     align-items: center;
     gap: 8px;
 }
-
 #txt{
     margin:0;
     font-size: 150%;
     color:#2c3e50;
 }
-
 .txtImagen {
     min-height: 100px;
     display: flex;
@@ -167,30 +165,80 @@ main{
     background-color: #d2bd9f;
 }
 
-.Consejos {
-    font-size: 110%;
-    max-width: 800px;
-    margin: 0px;
-    text-align: left; 
-}
 
-.Consejos h4{
-    font-size: 130%;
+.pagina-inicio main{
+    padding: 24px 16px;
 }
-
+.contenido-inicio{
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 24px;
+   
+}
+.pagina-inicio .presentacion-inicio {
+    margin: 0 auto 32px;
+    background-color: rgba(255, 245, 230, 0.82);
+    border-radius: 16px;
+}
+.pagina-inicio #txt{
+    font-size: 1.1rem;
+    color: #244630;
+}
+.por-que-papas {
+    max-width: 900px;
+    margin: 0 auto 32px;
+    padding: 24px;
+    background-color: rgba(255, 245, 230, 0.82);
+    border-radius: 16px;
+}
+.por-que-papas h2{
+    display: inline-block;
+    margin-bottom: 24px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #5a7243;
+}
+.razones{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 24px;
+}
+.razones li{
+    flex: 1 1 190px;
+    text-align: center;
+}
+.razones img {
+    display: block;
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    margin: 0 auto 8px;
+}
+.razones h3{
+    margin-bottom: 8px;
+}
 footer{
-    background-color: #fffdf7;
+    background-color: #FFF5E6;
     border-top: 2px solid #d9ead3;
     padding: 15px;
     text-align: center;
     color: #244630;
     margin-top: auto;
 }
-
 footer p{
     margin: 5px;
 }
 
+/*Formularioooo*/
+.tarjeta-contacto {
+    width: 90%;
+    max-width: 760px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 245, 230, 0.82);
+    border-radius: 16px;
+}
 form{
     display: flex;
     justify-content: center;
@@ -198,39 +246,42 @@ form{
     gap:30px;
     align-items: center;
     padding:20px; 
+    
 }
 
 #secciones{
     width: 100%;
     max-width: 350px;
     text-align: center;
-
+    
 }
-
 input{
+    
     margin:10px 0;
     border-radius: 0;
     width: 100%;             
-    max-width: 350px;        
+    max-width: 350px;       
     padding: 10px 15px;
-
+    border-radius: 8px; 
+    
 }
-
 #mensaje{
+    
     display: block;
     padding: 10px 15px;
     font: inherit; 
     border-radius: 0;
     margin: 10px 0;
     width: 100%;
-    height: 90px;
+    border-radius: 8px; 
     resize: none;
 }
+  
 
 .error {
     color: #8a1f11;
-    font-size: 10px;
-
+    font-size: 14px;
+    min-height: 3.5em;
 }
 
 #resumen {
@@ -238,7 +289,12 @@ input{
     margin: 20px auto;
     padding: 15px;
 }
+ #resumen p {
+    overflow-wrap: anywhere;
+}  
 
+
+/* Página de recetas */
 .pagina-recetas main {
     padding: 24px;
 }
@@ -259,7 +315,8 @@ input{
 .recetas article {
     flex: 1 1 420px;
     padding: 18px;
-    background-color: #fff8ef;
+    background-color: rgba(255, 245, 230, 0.82);
+    border-radius: 16px;
 }
 
 .recetas img {
@@ -287,3 +344,4 @@ input{
         text-align: center;
     }
 }
+
