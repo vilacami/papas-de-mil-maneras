@@ -2,8 +2,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
 
-    }
+html{
+    height: 100%;
+}
 
 body{
     min-height: 100%;
@@ -11,6 +14,7 @@ body{
     flex-direction: column;
     font-family: Arial, sans-serif;
 }
+
 h1, h2, h3, h4{
     font-family: Georgia, serif;
 }
@@ -18,6 +22,7 @@ h1, h2, h3, h4{
 header{
     background-color: #fffdf7;
 }
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -26,15 +31,18 @@ nav{
     gap: 15px;
     padding: 12px 20px;
 }
+
 .marca{
     display: flex;
     align-items: center;
     gap: 12px;
 }
+
 .marca img{
     width: 64px;
     height: auto;
 }
+
 nav h1{
     color: #244630;
     font-size: 1.6rem;
@@ -51,8 +59,9 @@ nav h1{
     display: block;
     padding: 10px;
     color: #244630;
-   border-radius: 8px; 
+    border-radius: 8px;
 }
+
 .menuNavegacion a:hover,
 .menuNavegacion a.activo{
     color: #244630;
@@ -61,12 +70,12 @@ nav h1{
 
 main{
 
-    background-color:#FFF5E6;
-    background-image: linear-gradient(rgba(131, 235, 105, 0.596), rgba(243, 186, 100, 0.65)),url("../imagenes/fondo.jpeg");
-    background-repeat: repeat no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;     
+     background-color:#FFF5E6;
+     background-image: linear-gradient(rgba(234, 216, 190, 0.65), rgba(234, 216, 190, 0.65)), url("../imagenes/fondo.jpeg");
+     background-repeat: repeat no-repeat;
+     background-size: cover;
+     background-position: center;
+     min-height: 100vh;
 }
 .presentacion-inicio,
 .presentacion-contacto{
@@ -78,37 +87,43 @@ main{
     max-width: 900px;
     margin: 20px auto;
     padding: 20px;
-    background-color: white;
+    background-color: #FFF5E6;;
 }
+
 .presentacion-inicio .Contenido,
 .presentacion-contacto div{
     flex: 1 1 300px;
 }
+
 .presentacion-inicio img,
 .presentacion-contacto img{
     width: 180px;
     max-width: 100%;
     height: auto;
 }
-.presentacion-contacto{
+
+.presentacion-contacto {
     max-width: 760px;
     gap: 16px;
-    background-color: #fffcf6;
+     margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+
 }
+
 .presentacion-contacto img{
     width: 160px;
 }
+
 .Carrusel{
-     position: relative;  
-     max-width: 600px; 
-     margin: 30px auto;      
-     text-align:center;
-     
+     position: relative;
 }
+
 #imgCarrusel{
-    width: 100%;             
+    width: 100%;
     height: 100%;
-    border-radius: 8px;  
+    border-radius: 8px;
     flex: 1;
     min-width: 0;
     width: 100%;
@@ -116,16 +131,19 @@ main{
     object-fit: contain;
 
 }
+
 .DivImg{
     display: flex;
     align-items: center;
     gap: 8px;
 }
+
 #txt{
     margin:0;
     font-size: 150%;
     color:#2c3e50;
 }
+
 .txtImagen {
     min-height: 100px;
     display: flex;
@@ -144,18 +162,22 @@ main{
     cursor: pointer;
     top: 180px;
     }
+
 .flecha:hover {
     background-color: #d2bd9f;
 }
+
 .Consejos {
     font-size: 110%;
     max-width: 800px;
     margin: 0px;
     text-align: left; 
 }
+
 .Consejos h4{
     font-size: 130%;
 }
+
 footer{
     background-color: #fffdf7;
     border-top: 2px solid #d9ead3;
@@ -164,9 +186,11 @@ footer{
     color: #244630;
     margin-top: auto;
 }
+
 footer p{
     margin: 5px;
 }
+
 form{
     display: flex;
     justify-content: center;
@@ -175,12 +199,14 @@ form{
     align-items: center;
     padding:20px; 
 }
+
 #secciones{
     width: 100%;
     max-width: 350px;
     text-align: center;
 
 }
+
 input{
     margin:10px 0;
     border-radius: 0;
@@ -189,6 +215,7 @@ input{
     padding: 10px 15px;
 
 }
+
 #mensaje{
     display: block;
     padding: 10px 15px;
@@ -196,11 +223,13 @@ input{
     border-radius: 0;
     margin: 10px 0;
     width: 100%;
+    height: 90px;
+    resize: none;
 }
 
 .error {
     color: #8a1f11;
-    font-size: 19px;
+    font-size: 10px;
 
 }
 
