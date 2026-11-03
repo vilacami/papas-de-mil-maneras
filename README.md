@@ -10,4 +10,4 @@ Desde el menú se podrá visitar el inicio, consultar las recetas
 y acceder al formulario de contacto.
 
 ## Sitio publicado
-Pendiente de publicación en GitHub Pages.
+https://vilacami.github.io/papas-de-mil-maneras/
