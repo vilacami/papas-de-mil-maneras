@@ -19,8 +19,8 @@ const formatoTelefono = /^\d{10}$/;
 
     }
 
-formulario.addEventListener("submit", function (e) {
-    
+formulario.addEventListener("submit", function (evento) {
+    evento.preventDefault();
 
     const nombreIngresado = nombre.value.trim();
     const correoIngresado = correo.value.trim();
@@ -39,8 +39,8 @@ formulario.addEventListener("submit", function (e) {
     } else if (nombreIngresado.length < 4 || nombreIngresado.length > 40) {
         errorNombre.textContent = "El nombre debe tener entre 4 y 40 caracteres.";
         datosValidos = false;
-        nombreIngresado.textContent="";
-        nombre.value = "";
+        
+       
     }
 
     if (correoIngresado === "") {
@@ -49,7 +49,7 @@ formulario.addEventListener("submit", function (e) {
     } else if (!formatoCorreo.test(correoIngresado)) {
         errorCorreo.textContent = "Escribí un correo válido, por ejemplo nombre@correo.com.";
         datosValidos = false;
-        correo.value = "";
+        
 
     }
 
@@ -61,8 +61,8 @@ formulario.addEventListener("submit", function (e) {
     } else if (!formatoTelefono.test(telefonoIngresado)) {
         errorTelefono.textContent = "El teléfono debe tener exactamente 10 dígitos, sin espacios ni guiones.";
         datosValidos = false;
-        console.log(telefono);
-        telefono.value = "";
+        
+       
     }
 
     if (mensajeIngresado === "") {
@@ -77,6 +77,7 @@ formulario.addEventListener("submit", function (e) {
         return;
     }
 
+    resumen.style.display = "block";
     resumen.innerHTML = "";
     const titulo = document.createElement("h2");
     titulo.textContent = "Resumen de tu consulta";
