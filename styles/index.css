@@ -126,6 +126,10 @@ main{
     height: 320px;
     object-fit: contain;
 }
+.Carrusel h2{
+ text-align: center;
+ width: 100%; 
+}
 
 .DivImg{
     display: flex;
