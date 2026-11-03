@@ -20,7 +20,8 @@ h1, h2, h3, h4{
 }
 
 header{
-    background-color: #fffdf7;
+    background-color: #FFF5E6;
+    border-top: 2px solid #d9ead3;
 }
 
 nav{
@@ -280,6 +281,7 @@ input{
     width: 100%;
     border-radius: 8px; 
     resize: none;
+    height: 15vh;
 }
   
 
@@ -293,8 +295,6 @@ input{
     max-width: 600px;
     margin: 20px auto;
     padding: 15px;
-    /*background-color: #eedde5;*/
-    /*background-color: #d9ead3;*/
     background-color: white;
     border-radius: 8px;
     display: none;
@@ -350,6 +350,11 @@ input{
 .recetas ul,
 .recetas ol {
     margin: 8px 0 16px 22px;
+    
+}
+.recetas li{
+    margin-top: 2vh;
+
 }
 
 @media (max-width: 600px) {
