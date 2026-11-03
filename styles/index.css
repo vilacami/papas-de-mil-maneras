@@ -88,6 +88,7 @@ main{
     margin: 20px auto;
     padding: 20px;
     background-color: #FFF5E6;;
+
 }
 
 .presentacion-inicio .Contenido,
@@ -129,6 +130,7 @@ main{
 .Carrusel h2{
  text-align: center;
  width: 100%; 
+ margin-bottom: 2.5vh;
 }
 
 .DivImg{
@@ -140,6 +142,8 @@ main{
     margin:0;
     font-size: 150%;
     color:#2c3e50;
+    margin-top: 2.5vh;
+   
 }
 .txtImagen {
     min-height: 100px;

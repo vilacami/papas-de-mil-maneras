@@ -3,12 +3,18 @@ const imag=[{ruta:"imagenes/papa1.jpg", text:"Papas rellenas con queso gratinado
 let i=0;
 let img= document.getElementById("imgCarrusel");
 let texto=document.getElementById("txt");
+let boton=false;
 
 img.src=imag[i].ruta;
 texto.innerHTML=imag[i].text;
+img.alt=imag[i].text;
 
 
-function anterior(){
+function anterior(boton){
+
+    if(boton){
+        clearInterval(interruporAutomatico);
+    }
 
     if(i>0){
         i--
@@ -18,10 +24,14 @@ function anterior(){
 
     img.src= imag[i].ruta;
     texto.innerHTML=imag[i].text;
+    img.alt=imag[i].text;
     
 }
 
-function siguiente(){
+function siguiente(boton){
+    if(boton){
+        clearInterval(interruporAutomatico);
+    }
 
     if(i<imag.length-1){
         i++
@@ -31,4 +41,9 @@ function siguiente(){
     
     img.src= imag[i].ruta;
     texto.innerHTML=imag[i].text;
+    img.alt=imag[i].text;
 }
+
+interruporAutomatico= setInterval(() => {
+    siguiente();
+},3000);
