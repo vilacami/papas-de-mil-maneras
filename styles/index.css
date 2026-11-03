@@ -84,13 +84,14 @@ main{
     align-items: center;
     justify-content: center;
     gap: 20px;
-    max-width: 900px;
+    max-width: 760px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #FFF5E6;;
 
 }
-
+.pagina-inicio .presentacion-inicio img {
+    width: 120px;
+}
 .presentacion-inicio .Contenido,
 .presentacion-contacto div{
     flex: 1 1 300px;
@@ -118,7 +119,6 @@ main{
 }
 
 
-
 #imgCarrusel{
     border-radius: 8px;
     flex: 1;
@@ -131,6 +131,7 @@ main{
  text-align: center;
  width: 100%; 
  margin-bottom: 2.5vh;
+ color: #244630
 }
 
 .DivImg{
@@ -141,8 +142,8 @@ main{
 #txt{
     margin:0;
     font-size: 150%;
-    color:#2c3e50;
-    margin-top: 2.5vh;
+    color: #244630;
+     width: 100%;
    
 }
 .txtImagen {
@@ -150,7 +151,9 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
+
 
 .flecha {
     background-color: #e7d9c4;
@@ -182,6 +185,7 @@ main{
     margin: 0 auto 32px;
     background-color: rgba(255, 245, 230, 0.82);
     border-radius: 16px;
+    color: #244630
 }
 .pagina-inicio #txt{
     font-size: 1.1rem;
@@ -193,6 +197,7 @@ main{
     padding: 24px;
     background-color: rgba(255, 245, 230, 0.82);
     border-radius: 16px;
+    color: #244630;
 }
 .por-que-papas h2{
     display: inline-block;
@@ -307,11 +312,14 @@ input{
 /* Página de recetas */
 .pagina-recetas main {
     padding: 24px;
+     color: #473728;
 }
 
 .pagina-recetas main h2 {
     max-width: 1000px;
     margin: 0 auto 16px;
+    color: #244630;
+
 }
 
 .recetas {
@@ -352,6 +360,22 @@ input{
 
     nav h1 {
         text-align: center;
+    }
+
+    .pagina-inicio main {
+        padding: 3vw 2vw;
+    }
+
+    .contenido-inicio {
+        padding: 2vw;
+    }
+
+    .DivImg {
+        gap: 1vw;
+    }
+
+    #imgCarrusel {
+        height: 45vw;
     }
 }
 
